@@ -31,7 +31,7 @@ if (guessSportOregon.toLowerCase() === 'yes') {
 } 
 
 var guessLocal = prompt('Did Mark Swearingen ever live in San Francisco?  Please answer either yes or no');
-/
+
 if (guessLocal.toLowerCase() === 'yes') {
   alert('Congratulations, yes is correct.  Mark lived in San Francisco before taking a job in Eugene, Oregon for a Computer Aided Manufacturing(CAM) software development company')
 } else {
