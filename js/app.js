@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 // Prompt and alert getting the users name and welcoming them to the webpage.
 var userName = prompt('Please enter your name');
@@ -17,34 +17,34 @@ if (guessSchool.toLowerCase() === 'yes') {
 var guessSportOregon = prompt('Did Mark Swearingen skipper on the University of Oregon sailing team?  Please answer either yes or no');
 
 if (guessSportOregon.toLowerCase() === 'yes') {
-  alert('Congratulations, yes is correct.  Mark raced for the University of Oregon his sophomore year in regattas in Washington, Oregon and British Columbia')
+  alert('Congratulations, yes is correct.  Mark raced for the University of Oregon his sophomore year in regattas in Washington, Oregon and British Columbia');
 } else {
-  alert('Sorry, no is incorrect.  Mark raced for the University of Oregon his sophomore year in regattas in Washington, Oregon and British Columbia')
-} 
+  alert('Sorry, no is incorrect.  Mark raced for the University of Oregon his sophomore year in regattas in Washington, Oregon and British Columbia');
+}
 
 var guessSportCMC = prompt('Did Mark Swearingen race cross country at Clarement McKenna College?  Please answer either yes or no');
 
-if (guessSportOregon.toLowerCase() === 'yes') {
-  alert('Sorry, yes is incorrect.  Mark actually pole vaulted for Claremont McKenna College but did not run cross country')
+if (guessSportCMC.toLowerCase() === 'yes') {
+  alert('Sorry, yes is incorrect.  Mark actually pole vaulted for Claremont McKenna College but did not run cross country');
 } else {
-  alert('Congratulations, no is correct.  Mark actually pole vaulted for Claremont McKenna College but did not run cross country')
-} 
+  alert('Congratulations, no is correct.  Mark actually pole vaulted for Claremont McKenna College but did not run cross country');
+}
 
 var guessLocal = prompt('Did Mark Swearingen ever live in San Francisco?  Please answer either yes or no');
 
 if (guessLocal.toLowerCase() === 'yes') {
-  alert('Congratulations, yes is correct.  Mark lived in San Francisco before taking a job in Eugene, Oregon for a Computer Aided Manufacturing(CAM) software development company')
+  alert('Congratulations, yes is correct.  Mark lived in San Francisco before taking a job in Eugene, Oregon for a Computer Aided Manufacturing(CAM) software development company');
 } else {
-  alert('Sorry, no is incorrect.  Mark lived in San Francisco before taking a job in Eugene, Oregon for a Computer Aided Manufacturing(CAM) software development company')
-} 
+  alert('Sorry, no is incorrect.  Mark lived in San Francisco before taking a job in Eugene, Oregon for a Computer Aided Manufacturing(CAM) software development company');
+}
 
 var guessOccupation = prompt('Is Mark Swearingen\'s occupational goal to be a talented Software Developer?  Please answer either yes or no');
 
 if (guessOccupation.toLowerCase() === 'yes') {
-  alert('Congratulations, yes is correct.  Mark is currently working towards becoming a talented Software Developer at COCC DevStation')
+  alert('Congratulations, yes is correct.  Mark is currently working towards becoming a talented Software Developer at COCC DevStation');
 } else {
-  alert('Sorry, no is incorrect.  Mark is currently working towards becoming a talented Software Developer at COCC DevStation')
+  alert('Sorry, no is incorrect.  Mark is currently working towards becoming a talented Software Developer at COCC DevStation');
 }
 
 //  Final message thanking the user, by name provided, for playing the game.
-alert('Thank you ' + userName + ' for answering the questions.  Hopefully you learned some interesting information about Mark Swearingen')
+alert('Thank you ' + userName + ' for answering the questions.  Hopefully you learned some interesting information about Mark Swearingen');
