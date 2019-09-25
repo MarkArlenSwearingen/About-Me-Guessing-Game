@@ -50,6 +50,9 @@ alert('Hello ' + userName + '. Welcome to the Mark Swearingen webpage');
 // //  Final message thanking the user, by name provided, for playing the game.
 // alert('Thank you ' + userName + ' for answering the questions.  Hopefully you learned some interesting information about Mark Swearingen');
 
+
+// Code for guessing number game.
+// Stretch goal will be to add a random number rather than a favorite number.
 var guessNumber = parseInt(prompt('Please guess Mark\'s favorite number'), 10);
 console.log(guessNumber);
 
@@ -62,7 +65,7 @@ for (var i = 0; i < 4; i++) {
     i = i + 4;
   }
   if (guessNumber < favoriteNumber){
-    alert('Your guess of ' + guessNumber + 'was too low.  Please guess higher'); 
+    alert('Your guess of ' + guessNumber + 'was too low.  Please guess higher');
   }
   if (guessNumber > favoriteNumber){
     alert('Your guess of ' + guessNumber + 'was too high.  Please guess lower');
@@ -77,4 +80,21 @@ for (var i = 0; i < 4; i++) {
   }
 }
 
+// Code for guessing from an array
 
+var favoriteMascotsArray = ['DUCK', 'DUCKS','BEAVER', 'BEAVERS', 'TIGER', 'TIGERS', 'BEAR', 'BEARS', 'EAGLE', 'EAGLES', '49ER', '49ERS', 'STAG', 'STAGS', 'ATHENA', 'ATHENAS', 'PHANATIC', 'PHANATICS'];
+console.log (favoriteMascotsArray);
+
+for (var i = 0; i < 6; i++) {
+  var mascotGuess = prompt('Please guess one of my favorite mascots');
+  if (favoriteMascotsArray.includes(mascotGuess.toUpperCase())){
+    console.log(mascotGuess);
+    alert('Correct! My favorit mascots are ' + favoriteMascotsArray);
+    i = 6;
+    //set counter of correct answers
+  } else {
+    if (i === 5){
+      alert('The number of guesses has been reached. My favorite mascots are ' + favoriteMascotsArray);
+    }
+  }
+}
