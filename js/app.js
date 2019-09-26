@@ -74,11 +74,10 @@ function numberGame(){
       i = i + 4;
     }
     if (guessNumber < favoriteNumber){
-      alert('Your guess of ' + guessNumber + 'was too low.  Please guess higher');
+      alert('Your guess of ' + guessNumber + ' was too low.  Please guess higher');
     }
     if (guessNumber > favoriteNumber){
-      alert('Your guess of ' + guessNumber + 'was too high.  Please guess lower');
-      // guessNumber = parseInt(prompt('Your guess of ' + guessNumber + 'was too high.  Please guess lover'), 10);
+      alert('Your guess of ' + guessNumber + ' was too high.  Please guess lower');
     }
     if (i === 3) {
       alert ('Your number of guesses had ended.  The number is ' + favoriteNumber);
@@ -90,27 +89,28 @@ function numberGame(){
   }
 }
 
-guessingGame();
+numberGame();
 
-// // Code for guessing from an array
+// Code for guessing from an array
 
-// var favoriteMascotsArray = ['DUCK', 'DUCKS','BEAVER', 'BEAVERS', 'TIGER', 'TIGERS', 'BEAR', 'BEARS', 'EAGLE', 'EAGLES', '49ER', '49ERS', 'STAG', 'STAGS', 'ATHENA', 'ATHENAS', 'PHANATIC', 'PHANATICS'];
+var favoriteMascotsArray = ['DUCK', 'DUCKS','BEAVER', 'BEAVERS', 'TIGER', 'TIGERS', 'BEAR', 'BEARS', 'EAGLE', 'EAGLES', '49ER', '49ERS', 'STAG', 'STAGS', 'ATHENA', 'ATHENAS', 'PHANATIC', 'PHANATICS'];
 
-// for (var i = 0; i < 6; i++) {
-//   var mascotGuess = prompt('Please guess one of my favorite mascots');
-//   if (favoriteMascotsArray.includes(mascotGuess.toUpperCase())){
-//     correctAnswers++;
-//     alert('Correct! My favorit mascots are ' + favoriteMascotsArray);
-//     i = 6;
-//     //set counter of correct answers
-//   } else {
-//     if (i === 5){
-//       alert('The number of guesses has been reached. My favorite mascots are ' + favoriteMascotsArray);
-//     }
-//   }
-// }
+function mascotGame() {
+  for (var i = 0; i < 6; i++) {
+    var mascotGuess = prompt('Please guess one of my favorite mascots');
+    if (favoriteMascotsArray.includes(mascotGuess.toUpperCase())){
+      correctAnswers++;
+      alert('Correct! My favorit mascots are ' + favoriteMascotsArray);
+      i = 6;
+    } else {
+      if (i === 5){
+        alert('The number of guesses has been reached. My favorite mascots are ' + favoriteMascotsArray);
+      }
+    }
+  }
+}
+mascotGame();
 
-
-// //  Final message thanking the user, by name provided, for playing the game.
-// alert('Thank you ' + userName + ' for answering the questions.  You got ' + correctAnswers + ' correct answers out of seven questions including the number game. Hopefully you learned some interesting information about Mark Swearingen and had some fun.');
+//  Final message thanking the user, by name provided, for playing the game.
+alert('Thank you ' + userName + ' for answering the questions.  You got ' + correctAnswers + ' correct answers out of seven questions including the number game. Hopefully you learned some interesting information about Mark Swearingen and had some fun.');
 
