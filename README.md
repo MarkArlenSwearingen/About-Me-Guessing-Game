@@ -1,5 +1,9 @@
 <!-- Getting to Know Mark Swearingen -->
 
+9/26/19 Lindsay served as Driver and Mark served as Navigator. 
+Code was updated through Pair Programming
+Code was wrapped into functions. 
+
 This website is designed to ask the user some questions
 about Mark Swearingen.  The presentation is that of a game
 with feedback that includes if the user answered correctly 
