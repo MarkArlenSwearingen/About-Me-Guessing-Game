@@ -59,8 +59,7 @@ function guessingGame() {
 }
 guessingGame();
 
-// // Code for guessing number game.
-// // Stretch goal will be to add a random number rather than a favorite number.
+// Code for guessing number game.
 
 function numberGame(){
 
@@ -92,20 +91,23 @@ function numberGame(){
 numberGame();
 
 // Code for guessing from an array
+// Holly deserves the credit for the idea of asking for plurals.  It made the message to the user much cleaner.
 
-var favoriteMascotsArray = ['DUCK', 'DUCKS','BEAVER', 'BEAVERS', 'TIGER', 'TIGERS', 'BEAR', 'BEARS', 'EAGLE', 'EAGLES', '49ER', '49ERS', 'STAG', 'STAGS', 'ATHENA', 'ATHENAS', 'PHANATIC', 'PHANATICS'];
-
+var favoriteMascotsArray = ['ducks', 'beavers', 'tigers', 'eagles', '49ers', 'stags', 'athenas', 'phanatics'];
+var mascotGuess = '';
 function mascotGame() {
   for (var i = 0; i < 6; i++) {
-    var mascotGuess = prompt('Please guess one of my favorite mascots');
-    if (favoriteMascotsArray.includes(mascotGuess.toUpperCase())){
-      correctAnswers++;
-      alert('Correct! My favorit mascots are ' + favoriteMascotsArray);
-      i = 6;
-    } else {
-      if (i === 5){
-        alert('The number of guesses has been reached. My favorite mascots are ' + favoriteMascotsArray);
+    mascotGuess = prompt('Please guess one of my favorite mascots.  Use plural such as lions');
+    for (var j = 0; j < favoriteMascotsArray.length; j++) {
+      if (mascotGuess.toLowerCase() === favoriteMascotsArray[j]) {
+        correctAnswers++;
+        alert('You are correct! My favorit mascots are ' + favoriteMascotsArray);
+        i = 6;
+        break;
       }
+    }
+    if(i === 5) {
+      alert('Sorry, you have run out of guesses. My favorit mascots are ' + favoriteMascotsArray);
     }
   }
 }
@@ -113,4 +115,3 @@ mascotGame();
 
 //  Final message thanking the user, by name provided, for playing the game.
 alert('Thank you ' + userName + ' for answering the questions.  You got ' + correctAnswers + ' correct answers out of seven questions including the number game. Hopefully you learned some interesting information about Mark Swearingen and had some fun.');
-
