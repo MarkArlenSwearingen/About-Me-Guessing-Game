@@ -1,13 +1,8 @@
 'use strict';
 
-// Prompt and alert getting the users name and welcoming them to the webpage.
 var userName = prompt('Please enter your name');
 alert('Hello ' + userName + '. Welcome to the Mark Swearingen webpage');
 
-// Five questions with yes or no answers to provide information about Mark Swearingen in a guessing game.
-// Alerts are sent to the user letting them know if there were correct and a little information about the answer.
-
-// set variable for tracking total number of correct answers
 var correctAnswers = 0;
 
 function guessingGame() {
@@ -18,14 +13,14 @@ function guessingGame() {
     alert('Congratulations, yes is correct.  Although Mark graduated from Clarement McKenna College, he also attended the University of Oregon his sophomore year and winter term senior year')
     correctAnswers++;
   } else {
-    alert('Sorry, no is incorrect.  Although Mark graduated from Clarement McKenna College, he also attended the University of Oregon his sophomore year and winter term senior year')
+    alert('Sorry, no is incorrect.  Although Mark graduated from Clarement McKenna College, he also attended the University of Oregon his sophomore year and winter term senior year');
   }
 
   var guessSportOregon = prompt('Did Mark Swearingen skipper on the University of Oregon sailing team?  Please answer either yes or no');
 
   if (guessSportOregon.toLowerCase() === 'yes') {
     alert('Congratulations, yes is correct.  Mark raced for the University of Oregon his sophomore year in regattas in Washington, Oregon and British Columbia');
-    correctAnswers++;  
+    correctAnswers++;
   } else {
     alert('Sorry, no is incorrect.  Mark raced for the University of Oregon his sophomore year in regattas in Washington, Oregon and British Columbia');
   }
@@ -59,8 +54,6 @@ function guessingGame() {
 }
 guessingGame();
 
-// Code for guessing number game.
-
 function numberGame(){
 
   var guessNumber = parseInt(prompt('Please guess Mark\'s favorite number'), 10);
@@ -90,9 +83,6 @@ function numberGame(){
 
 numberGame();
 
-// Code for guessing from an array
-// Holly deserves the credit for the idea of asking for plurals.  It made the message to the user much cleaner.
-
 var favoriteMascotsArray = ['ducks', 'beavers', 'tigers', 'eagles', '49ers', 'stags', 'athenas', 'phanatics'];
 var mascotGuess = '';
 function mascotGame() {
@@ -113,5 +103,4 @@ function mascotGame() {
 }
 mascotGame();
 
-//  Final message thanking the user, by name provided, for playing the game.
 alert('Thank you ' + userName + ' for answering the questions.  You got ' + correctAnswers + ' correct answers out of seven questions including the number game. Hopefully you learned some interesting information about Mark Swearingen and had some fun.');
